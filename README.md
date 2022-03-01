@@ -7,7 +7,7 @@
 
 1) Clone the repo and build it. 
 
-    `mvn clean install`.
+    `mvn clean install`
 
 2) Go inside `target` directory.
 
@@ -17,7 +17,7 @@
 
     `java -jar data-processor-1.0.0-full.jar <Input directory path>`
 
-    `eg. java -jar data-processor-1.0.0-full.jar /Users/bhathiya/Downloads/files`
+    `eg. java -jar data-processor-1.0.0-full.jar /data/files/input`
 
     The output will be like this.
 
