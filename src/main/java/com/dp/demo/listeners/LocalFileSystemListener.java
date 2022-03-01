@@ -57,7 +57,7 @@ public class LocalFileSystemListener implements InputListener {
         }
 
         if (!Files.isDirectory(Paths.get(dataSource.getLocation()))) {
-            throw new UnsupportedDatasource("Path is not a directory: " + dataSource.getLocation());
+            throw new UnsupportedDatasource("Invalid directory: " + dataSource.getLocation());
         }
 
         //read current files

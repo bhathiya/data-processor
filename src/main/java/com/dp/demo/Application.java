@@ -47,6 +47,6 @@ public class Application {
             log.error("Please provide an input directory.");
             return;
         }
-        new LocalFileSystemListener().listen(new LocalFileDataSource("/Users/bhathiya/Downloads/files/"));
+        new LocalFileSystemListener().listen(new LocalFileDataSource(args[0]));
     }
 }
