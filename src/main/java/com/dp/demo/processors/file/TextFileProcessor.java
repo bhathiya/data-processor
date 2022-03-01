@@ -106,11 +106,20 @@ public class TextFileProcessor extends FileProcessor {
             numberOfWords = tempNumberOfWords;
             numberOfDots = tempNumberOfDots;
             mostUsedWord = tempMostOccurredWord;
-            
+
             processed = true;
             outputHandler.write("File:" + fileName + "    Words:" + numberOfWords + "    Dots:" + numberOfDots +
                     "    MostUsedWord:" + mostUsedWord + "(count=" + tempHighestOccurrence + ")");
             complete();
+        }
+    }
+
+    @Override
+    public void complete() throws IOException {
+        try {
+            super.complete();
+        } finally {
+            fileInputStream.close();
         }
     }
 
