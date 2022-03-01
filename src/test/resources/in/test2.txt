@@ -1,0 +1,8 @@
+Implementation
+you can use any IDE or editor you want
+you must use Java and can use any framework, library that you think will be helpful for you
+it's recommended that you add tests
+you can pack the application with maven
+Implement the solution using a simple console-based application
+You only need to support the processing of plain text file
+You only need to provide support for calculating the number of words, number of dots, and the most used word in the file content.

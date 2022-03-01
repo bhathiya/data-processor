@@ -1,0 +1,8 @@
+Simple File Parser
+This technical assessment involves designing and building the following JAVA application:
+
+A console application takes a directory path as argument.
+The application will then monitor the folder for existing files, as well new files, with the supported file extensions (e.g. txt, pdf, doc...).
+For each supported file, the application needs to process the file and print statistics on the console (e.g. number of special characters, number of words...).
+After that, each processed file should be moved to a "processed" sub-folder inside the directory  that was passed as argument.
+Even though this is a simpler exercise treat it like a production situation and write the code that you would expect to deliver for a live system

@@ -1,0 +1,21 @@
+Process
+Recruiting will schedule a 1-hour call with a HICX Engineer and Candidate to discuss the Assessment exercise.
+The candidate and Engineer will discuss the exercise at and they have the opportunity to ask as many questions as they need.
+The candidate will then have 30mins to complete UML Class Design
+The candidate will then re-join call after 30mins and discuss their design with Engineer.
+The HICX Engineer will then send candidate exercise via email and they then have 24 hours to complete solution and send it back to HICX with detailed explanation.
+HICX will then review the solution within next 48 hours
+Feel free to ask any questions before starting the design.
+Design
+Sketch a UML class diagram for Design. You can use any tool for the sketch and just provide a screenshot. (e.g. https://www.draw.io/)
+Your design should include the main classes interfaces needed to meet the requirement.
+Your design should cater for supporting multiple file types (e.g. txt, pdf) as well as adding more type as needed in the future.
+Your design should cater for adding more statistics or processing elements as needed in the future. (e.g. number of white spaces)
+You must include a detailed design breakdown explaining your primary idea, your thought process and any other information factored in to your design
+Instructions
+Once completed and within the allocated time you must send us the the following items
+
+Class Diagram Design (UML) - Downloaded image file (eg: pdf, jpg) or a accessible link to design. The class diagram is mandatory, however feel free to add any additional designs that you feel are relevant. Recommendations: Use Draw.IO or a similar free tool.
+Implementation in packaged zip file (With Maven project recommended not mandatory) or a link to a github repository.
+A READ.ME file with detailed explanation of the of the different classes that your implementation has, their purpose/responsibility and how they interact (how your application works in a nutshell).
+Please note: If you use any plugins, frameworks ensure that you include detailed instructions for our Engineers to install, build, test and run your solution.
