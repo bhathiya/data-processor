@@ -66,7 +66,7 @@ This processes data in a given data point. Eg. This reads the content in a given
 
 This writes data processor output to a given destination.
 
-In this application, LocalFileDataSource, which is a Data Source, represents a local file system directory. A LocalFileSystemListener, which is an Input Listener, reads the aforementioned LocalFileDataSource and picks up files in it. Then it creates threads of TextFileProcessor which is a Data Processor and hands those files to those threads. In addition to that, the LocalFileSystemListener also keeps monitoring the data source for new files and follows the same approach for those files as well. Each TextFileProcessor reads the given file and gets an InputStream from it. Then it goes through the InputStream and does all calculations in a single iteration. Once the processing is done, it passes the outputs to the LogOutputHandler which is an Output Handler. It logs the given text to a log file.
+In this application, LocalFileDataSource, which is a Data Source, represents a local file system directory. A LocalFileSystemListener, which is an Input Listener, reads the aforementioned LocalFileDataSource and picks up files in it. Then it creates threads of TextFileProcessor which is a Data Processor and hands those files over to those threads. In addition to that, the LocalFileSystemListener also keeps monitoring the data source for new files and follows the same approach for those files as well. Each TextFileProcessor reads the given file and gets an InputStream out of it. Then it goes through the InputStream and does all calculations in a single iteration. Once the processing is done, it passes the outputs to the LogOutputHandler which is an Output Handler. It logs the given text to a log file.
 
 ## Tests
 
