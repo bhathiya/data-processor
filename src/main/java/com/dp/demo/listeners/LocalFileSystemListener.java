@@ -40,6 +40,7 @@ import java.nio.file.WatchService;
 import java.util.List;
 
 import static java.nio.file.StandardWatchEventKinds.ENTRY_CREATE;
+import static java.nio.file.StandardWatchEventKinds.ENTRY_MODIFY;
 
 /**
  * This class monitors a specific location of a local file system.
@@ -69,7 +70,7 @@ public class LocalFileSystemListener implements InputListener {
         //monitor for new files
         WatchService watchService = FileSystems.getDefault().newWatchService();
         Path path = Paths.get(dataSource.getLocation());
-        path.register(watchService, ENTRY_CREATE);
+        path.register(watchService, ENTRY_CREATE, ENTRY_MODIFY);
         boolean poll = true;
         while (poll) {
             WatchKey key = watchService.take();
