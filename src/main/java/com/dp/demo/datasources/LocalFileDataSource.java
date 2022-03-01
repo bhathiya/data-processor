@@ -26,6 +26,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * Datasource represents the local file system
+ */
 public class LocalFileDataSource extends DataSource {
 
     private final String location;

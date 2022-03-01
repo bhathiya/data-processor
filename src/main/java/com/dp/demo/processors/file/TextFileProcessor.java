@@ -31,6 +31,9 @@ import java.io.Reader;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Processes text files
+ */
 public class TextFileProcessor extends FileProcessor {
 
     private static final Logger log = LogManager.getLogger(TextFileProcessor.class);
@@ -60,6 +63,7 @@ public class TextFileProcessor extends FileProcessor {
         }
     }
 
+    @Override
     public synchronized void process() throws IOException {
         long tempNumberOfWords = 0;
         long tempNumberOfDots = 0;
@@ -78,8 +82,7 @@ public class TextFileProcessor extends FileProcessor {
                     tempNumberOfDots++;
                 }
 
-                //count words and find most occurred word
-                //TODO: Verify character set
+                //count words and find the most occurred word
                 if (Character.isLetterOrDigit(ch) || ch == '-' || ch == '_') {
                     wordBuilder.append(ch);
                 } else {
@@ -102,8 +105,8 @@ public class TextFileProcessor extends FileProcessor {
 
             numberOfWords = tempNumberOfWords;
             numberOfDots = tempNumberOfDots;
-            mostUsedWord = tempMostOccurredWord; //if there are multiple words with the same number of occurrences,
-                                                 // the first word will be returned
+            mostUsedWord = tempMostOccurredWord;
+            
             processed = true;
             outputHandler.write("File:" + fileName + "    Words:" + numberOfWords + "    Dots:" + numberOfDots +
                     "    MostUsedWord:" + mostUsedWord + "(count=" + tempHighestOccurrence + ")");

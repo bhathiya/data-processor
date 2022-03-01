@@ -41,6 +41,9 @@ import java.util.List;
 
 import static java.nio.file.StandardWatchEventKinds.ENTRY_CREATE;
 
+/**
+ * This class monitors a specific location of a local file system.
+ */
 public class LocalFileSystemListener implements InputListener {
 
     private static final Logger log = LogManager.getLogger(LocalFileSystemListener.class);

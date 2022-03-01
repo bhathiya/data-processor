@@ -27,10 +27,21 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 
+/**
+ * Command line application
+ */
 public class Application {
 
     private static final Logger log = LogManager.getLogger(TextFileProcessor.class);
 
+    /**
+     * Starts the application
+     * 
+     * @param args The first element of this array is the input directory
+     * @throws UnsupportedDatasource
+     * @throws IOException
+     * @throws InterruptedException
+     */
     public static void main(String[] args) throws UnsupportedDatasource, IOException, InterruptedException {
         if (args.length == 0 || args[0] == null || args[0].isEmpty()) {
             log.error("Please provide an input directory.");

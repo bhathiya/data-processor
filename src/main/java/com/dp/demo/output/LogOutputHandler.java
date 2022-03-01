@@ -21,6 +21,9 @@ package com.dp.demo.output;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * Logs given text to a log file
+ */
 public class LogOutputHandler implements OutputHandler{
 
     private static final LogOutputHandler instance = new LogOutputHandler();

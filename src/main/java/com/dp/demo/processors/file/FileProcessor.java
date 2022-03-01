@@ -27,6 +27,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
+/**
+ * Processes a given file
+ */
 public abstract class FileProcessor implements DataProcessor {
 
     protected String inputFilePath;
