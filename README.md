@@ -38,7 +38,7 @@
     
 ## Notes
 
-- A "word" consists of chacaters in the below set. 
+- A "word" consists of characters in the below set. 
 
         {Alphanumeric, Hyphen, Underscore}
         
