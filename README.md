@@ -35,6 +35,14 @@
     [17:54:59.581] INFO  New file (abc.pdf) detected. Processing...
     [17:54:59.581] ERROR com.dp.demo.exception.UnsupportedFileType: Unsupported file type: pdf
     ```
+    
+## Notes
+
+- A "word" consists of chacaters in the below set. 
+
+        {Alphanumeric, Hyphen, Underscore}
+        
+- If there are multiple words with the same highest occurrence, the very first word will be returned as the most used word.
 
 
 
